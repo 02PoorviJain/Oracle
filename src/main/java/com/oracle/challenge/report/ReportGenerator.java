@@ -1,9 +1,7 @@
 package com.oracle.challenge.report;
 
-import com.oracle.challenge.queryexecuter.IQueryExecuter;
-import com.oracle.challenge.queryexecuter.QueryManager;
+import com.oracle.challenge.queryexecuter.QueryExecuter;
 
-public interface ReportStrategy {
-    //ToDo It can be renamed as IReportGenerator
-    void generateReport(IQueryExecuter queryExecuter);
+public interface ReportGenerator {
+    void generateReport(QueryExecuter queryExecuter);
 }
