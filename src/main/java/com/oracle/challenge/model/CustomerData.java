@@ -1,7 +1,7 @@
 package com.oracle.challenge.model;
 
 public class CustomerData {
-  
+
     private Long customerId;
     private Long contractId;
     private String geoZone;
@@ -20,7 +20,7 @@ public class CustomerData {
         this.projectCode = projectCode;
         this.buildDuration = buildDuration;
     }
-    
+
     public Long getCustomerId() {
         return customerId;
     }

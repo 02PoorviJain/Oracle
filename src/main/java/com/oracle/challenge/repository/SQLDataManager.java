@@ -1,13 +1,14 @@
 package com.oracle.challenge.repository;
 
 import com.oracle.challenge.model.CustomerData;
+
 import java.util.List;
 
 public class SQLDataManager implements DataManager {
     //private SqlClient sqlClient;
 
     @Override
-    public void addCustomerData(String filepath) {
+    public void addCustomerData(List<CustomerData> customerDataList) {
         //Can execute sql query here.
         // sqlClient.execute(addQuery);
     }
