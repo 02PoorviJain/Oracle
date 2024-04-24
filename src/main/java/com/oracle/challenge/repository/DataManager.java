@@ -4,6 +4,6 @@ import com.oracle.challenge.model.CustomerData;
 import java.util.List;
 
 public interface DataManager {
-    void addCustomerData(CustomerData customerData);
+    void addCustomerData(String filePath);
     List<CustomerData> getCustomerDataList();
 }
