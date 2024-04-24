@@ -34,20 +34,22 @@ The list of unique customerId for each geozone
 
 ```
 
-## Tech Stack
+## Build & Run
 
 **Language:** Java
-
-**Framework:** Springboot
-
-
 ## Build & Run
 
 ```bash
- git clone https://github.com/02PoorviJain/Oracle.git
+ Install : git clone https://github.com/02PoorviJain/Oracle.git
 
 ```
+
+```bash
+ Build : mvn clean install
+
+```    
     Run : GenerateReportServiceTest.java
+
 ## Code structure 
 
 
