@@ -6,6 +6,7 @@
 
 ## Requirement
 
+```bash
 Given a string with the following data (it includes multiple lines):
 2343225,2345,us_east,RedTeam,ProjectApple,3445s
 1223456,2345,us_west,BlueTeam,ProjectBanana,2211s
@@ -31,6 +32,7 @@ The number of unique customerId for each geozone
 The average buildduration for each geozone
 The list of unique customerId for each geozone
 
+```
 
 ## Tech Stack
 
