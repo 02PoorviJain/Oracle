@@ -50,7 +50,12 @@ The list of unique customerId for each geozone
 ```    
     Run : GenerateReportServiceTest.java
 
-## Code structure 
+## Class Diagram
 
 
+
+
+
+
+![App Screenshot](src/main/resources/static/UML_Diagram_3.png)
 
