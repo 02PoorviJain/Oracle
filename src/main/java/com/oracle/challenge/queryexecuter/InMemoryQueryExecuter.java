@@ -34,7 +34,7 @@ public class InMemoryQueryExecuter implements QueryExecuter {
     @Override
     public Map<String, Double> getAverageBuildDurationPerGeoZone() {
         return inMemoryDataManager.getCustomerDataList().stream()
-                .collect(Collectors.groupingBy(CustomerData::getGeoZone, Collectors.averagingDouble(data -> parseBuildDuration(data.getBuildduration()))));
+                .collect(Collectors.groupingBy(CustomerData::getGeoZone, Collectors.averagingDouble(data -> parseBuildDuration(data.getBuildDuration()))));
     }
 
     // Method to collect unique customerIds for each geoZone

@@ -1,6 +1,5 @@
 package com.oracle.challenge.service;
 
-import com.oracle.challenge.model.CustomerData;
 import com.oracle.challenge.queryexecuter.InMemoryQueryExecuter;
 import com.oracle.challenge.queryexecuter.QueryExecuter;
 import com.oracle.challenge.report.ConsoleResponseGenerator;
@@ -23,13 +22,8 @@ class GenerateReportServiceTest {
 
     @Test
     void generateReport() {
-
-        dataManager.addCustomerData(new CustomerData(2343225L, 2345L, "us_east", "RedTeam", "ProjectApple", "3445"));
-        dataManager.addCustomerData(new CustomerData(1223456L, 2345L, "us_west", "BlueTeam", "ProjectBanana", "2211"));
-        dataManager.addCustomerData(new CustomerData(3244332L, 2346L, "eu_west", "YellowTeam3", "ProjectCarrot", "4322"));
-        dataManager.addCustomerData(new CustomerData(1233456L, 2345L, "us_west", "BlueTeam", "ProjectDate", "2221"));
-        dataManager.addCustomerData(new CustomerData(3244132L, 2346L, "eu_west", "YellowTeam3", "ProjectEgg", "4122"));
-
+        String filePath = "src/main/resources/static/input.txt";
+        dataManager.addCustomerData(filePath);
         QueryExecuter queryExecuter = new InMemoryQueryExecuter(dataManager);
         generateReportService.generateReport(queryExecuter);
 
