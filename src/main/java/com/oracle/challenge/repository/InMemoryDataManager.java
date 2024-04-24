@@ -11,7 +11,7 @@ public class InMemoryDataManager implements DataManager {
 
     @Override
     public void addCustomerData(List<CustomerData> customerData) {
-        customerDataList.addAll(customerData) ;
+        this.customerDataList.addAll(customerData) ;
     }
 
     @Override
