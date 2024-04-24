@@ -7,11 +7,11 @@ import java.util.List;
 
 public class InMemoryDataManager implements DataManager {
 
-    private List<CustomerData> customerDataList = new ArrayList<>();
+    private final List<CustomerData> customerDataList = new ArrayList<>();
 
     @Override
-    public void addCustomerData(List<CustomerData> customerDataList) {
-        this.customerDataList = customerDataList;
+    public void addCustomerData(List<CustomerData> customerData) {
+        customerDataList.addAll(customerData) ;
     }
 
     @Override

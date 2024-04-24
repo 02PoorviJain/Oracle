@@ -8,7 +8,7 @@ public class SQLDataManager implements DataManager {
     //private SqlClient sqlClient;
 
     @Override
-    public void addCustomerData(List<CustomerData> customerDataList) {
+    public void addCustomerData(List<CustomerData> customerData) {
         //Can execute sql query here.
         // sqlClient.execute(addQuery);
     }

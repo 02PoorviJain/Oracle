@@ -29,8 +29,8 @@ class GenerateReportServiceTest {
     @Test
     void generateReport() {
         String filePath = "src/main/resources/static/input.txt";
-        List<CustomerData> list = customerDataParser.parseCustomerDataFromFile(filePath);
-        dataManager.addCustomerData(list);
+        List<CustomerData> customerData = customerDataParser.parseCustomerDataFromFile(filePath);
+        dataManager.addCustomerData(customerData);
         QueryExecuter queryExecuter = new InMemoryQueryExecuter(dataManager);
         generateReportService.generateReport(queryExecuter);
 
